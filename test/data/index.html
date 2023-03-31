@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Config</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      background-color: #fff;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type='text'] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    input[type='submit'] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    input[type='submit']:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  
+  <form name='input' action='/' method='POST'>
+    <label for='ssid'>wifi名称:</label>
+    <input type='text' name='ssid' id='ssid'>
+    <label for='password'>wifi密码:</label>
+    <input type='text' name='password' id='password'>
+    <input type='submit' value='保存'>
+  </form>
+</body>
+</html> 

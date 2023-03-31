@@ -233,5 +233,4 @@ void loop()
   delay(200);
 }
 ```
-![](images/bug2.png)
 ![](images/bug1.png)
