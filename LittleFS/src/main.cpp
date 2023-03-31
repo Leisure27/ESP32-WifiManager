@@ -6,8 +6,10 @@
 #include <DNSServer.h>
 #include <WebServer.h>
 
-char ssid[32] = {0};
-char password[32] = {0};
+// char ssid[32] = {0};
+// char password[32] = {0};
+char *ssid ="";
+char *password= "";
 
 const char *AP_Name = "ESP32_AP";
 int Web_Status = 1;
