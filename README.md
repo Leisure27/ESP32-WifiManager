@@ -211,9 +211,9 @@ void loop()
 {
 }
 ```
-### 实物测试
+### 功能测试
 ![](images/3.jpg)
-![](images/3.jpg)
+![](images/4.jpg)
 ### Bug记录与解决
 问题：连接成功后，在程序中已设置`server.stop();`,可是还会一直执行loop()中的程序，<mark>不理解为什么会这样。</mark>
 ```c++
