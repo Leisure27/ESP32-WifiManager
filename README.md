@@ -234,3 +234,19 @@ void loop()
 }
 ```
 ![](images/bug1.png)
+#### Bug解决方法
+定义一个全局变量`Web_Status`，使用Web配网时，令其等于1，否则为0
+```c++
+void loop()
+{
+  if (Web_Status == 1)
+  {
+    server.handleClient();          // 处理Web服务器的客户端连接请求(get、post)
+    dnsServer.processNextRequest(); // 处理DNS请求
+    delay(200);
+  }
+  else
+  {
+  }
+}
+```
