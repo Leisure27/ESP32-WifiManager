@@ -216,5 +216,22 @@ void loop()
 ![](images/3.jpg)
 ### Bug记录与解决
 问题：连接成功后，在程序中已设置`server.stop();`,可是还会一直执行loop()中的程序，<mark>不理解为什么会这样。</mark>
+```c++
+ if (WiFi.status() == WL_CONNECTED)
+  {
+    Serial.println(F("wifi连接成功"));
+    Serial.print("IP address: ");
+    Serial.println(WiFi.localIP());
+    server.stop();
+  }
+```
+```c++
+void loop()
+{
+  server.handleClient();          // 处理Web服务器的客户端连接请求(get、post)
+  dnsServer.processNextRequest(); // 处理DNS请求
+  delay(200);
+}
+```
 ![](images/bug2.png)
 ![](images/bug1.png)

@@ -149,7 +149,7 @@ void ConnectWifi()
     Serial.println(F("wifi连接成功"));
     Serial.print("IP address: ");
     Serial.println(WiFi.localIP());
-    // server.stop();
+    server.stop();
   }
 }
 
